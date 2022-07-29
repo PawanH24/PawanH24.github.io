@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+body{
+    background: whitesmoke;
+    font-size: 14px;
+}
+
+
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+    
+}
+
+.contact-box{
+    background: white;
+    display: flex;
+    border: 1px solid black;
+    box-shadow:5px 5px 5px rgb(0,0,0,0.5);
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: rgb(60, 15, 165);
+    color: white;
+}
+
+.contact-box p{
+    color: rgb(60, 15, 165);
+    font-weight: 800;
+}
+
+.contact-box table p{
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.contact-left h3{
+    color: rgb(60, 15, 165);
+}
+
+/*Navigation bar*/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.3);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+display: flex;
+align-items: center;
+justify-content:center ;
+}
+
+#navbar li{
+list-style: none;
+padding: 0 20px;
+}
+
+#navbar li a{
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+color: #1a1a1a;
+}
+
+#navbar li a:hover{
+color: #088178
+}
+
+/* contact*/
+.container input{
+    height: 2rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+ }
+
+ .container button{
+    background: rgb(60, 15, 165);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.2);
+
+ }
+
+ button:hover{
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.6);
+ }
+
+ #contact-details{
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 175px;
+   padding-right: 175px;
+ }
+
+ #contact-details .details{
+   width: 40%;
+ }
+
+ #contact-details .details span{
+   font-size: 12px;
+ }
+
+ #contact-details .details h2{
+   font-size: 40px;
+   line-height: 35px;
+   padding: 20px 0;
+ }
+
+ #contact-details .details h3{
+   font-size: 20px;
+   padding-bottom: 15px;
+ }
+
+ #contact-details .details li{
+   list-style: none;
+   display: flex;
+   padding: 10px 0;
+ }
+
+ #contact-details .details li i{
+   font-size: 14px;
+   padding-right: 22px;
+ }
+
+ #contact-details .details li p{
+   margin: 0;
+   font-size: 16px;
+ }
+
+
+ /* Footer*/
+
+ footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+
+ footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 0 50px 0 50px;
+ }
+
+ footer .col p{
+    padding: 10px 10px 5px 0;
+    
+ }
+
+ footer .logo{
+    margin-bottom: 30px;
+
+ }
+
+ footer h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+ }
+
+ footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+ }
+
+ footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+ }
+
+ footer .follow{
+    cursor: pointer;
+ }
+
+ footer .install .row img{
+    border: 2px solid #088178;
+    border-radius: 6px;
+ }
+
+ footer .install img{
+    margin: 10px 0 15px 0;
+ }
+
+ footer .follow i:hover,
+ footer a:hover{
+    color: rgb(0, 145, 255);
+ }
+
+ footer .copyright{
+    width: 100%;
+    text-align: center;
+ }
+
+ /* news letter*/
+ #new{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/news2.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+ }
+
+ #new h4{
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+ }
+
+ #new p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(176, 176, 176);
+ }
+
+ #new span{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+ }
+ #new .form{
+    display: flex;
+    width: 40%;
+ }
+
+ #new input{
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+ }
+
+ #new button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+ }
+
+ #new .normal{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    
+ }
+
+ h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
